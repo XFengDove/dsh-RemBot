@@ -550,7 +550,6 @@ start-watchdog.bat
 | `memory/` | 技能记忆 + 对话记忆 |
 | `rem_scripts/` | 雷姆自己写的脚本 |
 | `start-rem-bot.bat` / `stop-rem-bot.bat` | 启停 |
-| `qq_bot.py`（旧） | 早期 DSH headless 版本，已被 `rem_bot.py` 取代，保留备查 |
 
 其他目录：
 
@@ -562,12 +561,15 @@ start-watchdog.bat
 | `plugins/` | DSH 插件（如 imagegen） |
 | `local_engine/` | 本地大模型引擎（独立进程，`127.0.0.1:11500`） |
 | `local_workspace/` | 本地模型沙箱工作区 |
+| `qq-native/` | QQ 原生接口脚本（表情收藏等） |
 | `docs/` | 接口与协议文档 |
 | `云算力/` | 云服务器脚本与凭据 |
 
 ---
 
 ## 21. 打包发布
+
+> `打包发布.bat` 属于开发端脚本，部署包内不包含；本节描述的是开发目录里的发版流程。
 
 ```bat
 打包发布.bat

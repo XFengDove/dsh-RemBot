@@ -1,0 +1,2 @@
+requests>=2.31
+imageio-ffmpeg>=0.5  # 可选：没有系统 ffmpeg 时用它自带的 ffmpeg 合并音视频

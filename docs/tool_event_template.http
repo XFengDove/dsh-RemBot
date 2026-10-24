@@ -1,0 +1,23 @@
+POST http://127.0.0.1:5700/tool_event
+Authorization: Bearer <local_api.token>
+Content-Type: application/json; charset=utf-8
+
+{
+  "task": "任务名字",
+  "purpose": "任务的目的",
+  "result": "任务的结果",
+  "source": "tool-name"
+}
+
+###
+
+POST http://127.0.0.1:5701/tool_event
+X-API-Token: <local_api.token>
+Content-Type: application/json; charset=utf-8
+
+{
+  "task": "任务名字",
+  "purpose": "任务的目的",
+  "result": "任务的结果",
+  "source": "tool-name"
+}

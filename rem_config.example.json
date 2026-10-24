@@ -1,0 +1,198 @@
+{
+  "admin": 0,
+  "persona_name": "雷姆",
+  "context_compress_percent": 95,
+  "napcat": {
+    "base": "http://127.0.0.1:3000",
+    "token": "dsh-qq-token",
+    "listen_host": "127.0.0.1",
+    "listen_port": 5700
+  },
+  "deepseek": {
+    "provider": "deepseek",
+    "api_key": "",
+    "base_url": "https://api.deepseek.com",
+    "model": "deepseek-chat",
+    "reasoning_effort": "low",
+    "max_tokens": 4048,
+    "timeout_seconds": 180
+  },
+  "xai": {
+    "enable": false,
+    "base_url": "https://api.x.ai/v1",
+    "api_key": "",
+    "chat_model": "grok-4.3",
+    "vision_model": "grok-4.3",
+    "image_model": "grok-imagine-image",
+    "video_model": "grok-imagine-video",
+    "image_endpoint": "/images/generations",
+    "edit_endpoint": "/images/edits",
+    "video_endpoint": "/videos/generations",
+    "video_status_endpoint": "/videos/{id}",
+    "video_content_endpoint": "/videos/{id}/content",
+    "timeout_seconds": 180,
+    "video_timeout_seconds": 300,
+    "video_poll_seconds": 5
+  },
+  "image": {
+    "provider": "auto"
+  },
+  "persona_file": "人设.txt",
+  "memory": {
+    "dir": "memory",
+    "skill_file": "memory/skill_memory.md",
+    "conversation_file": "memory/conversation_memory.json",
+    "image_index_file": "memory/image_index.json",
+    "history_max": 30
+  },
+  "comfyui": {
+    "enable": false,
+    "base": "http://127.0.0.1:8188",
+    "timeout_seconds": 600,
+    "workflow_txt2img": "workflows/Anima大师工作流_api.json",
+    "workflow_img2img": "workflows/Anima大师工作流_api.json",
+    "workflow_caption": "",
+    "prompt_prefix": "mihoyo style, anime style, cel shading, clean lineart, official art",
+    "master_width": 720,
+    "master_height": 1280,
+    "master_upscale": 1.5,
+    "master_output": "final",
+    "master_unet": "",
+    "master_feedback": 2,
+    "master_run_p3": true
+  },
+  "chat": {
+    "reply_to_all_friends": true,
+    "whitelist": [],
+    "self_id": 0,
+    "proactive_interval_minutes": 15,
+    "proactive_targets": [],
+    "send_delay_min": 0.5,
+    "send_delay_max": 2.5,
+    "reply_debounce_seconds": 3
+  },
+  "non_admin_control": {
+    "enable": true
+  },
+  "group": {
+    "enable": true,
+    "reply_only_at": true,
+    "observe_without_at": true,
+    "auto_reply_without_at": true,
+    "chime_cooldown_seconds": 60,
+    "team_reply": true,
+    "team_max_turns": 3,
+    "team_cooldown_seconds": 10,
+    "observe_max": 50,
+    "observe_context_max": 20,
+    "whitelist": []
+  },
+  "profiles": {
+    "dir": "profiles",
+    "default": "default",
+    "user_map": {}
+  },
+  "scripts_dir": "rem_scripts",
+  "output_dir": "qq-bot-output",
+  "log_file": "rem_bot.log",
+  "team": {
+    "user_window_minutes": 10,
+    "other_bots": [],
+    "private_window_minutes": 0,
+    "private_max_turns": 3,
+    "private_cooldown_seconds": 5
+  },
+  "files": {
+    "enable": true,
+    "download_dir": "qq-bot-output/files/received",
+    "send_dir": "qq-bot-output/files/sent",
+    "max_receive_mb": 200,
+    "max_send_mb": 100,
+    "text_preview_chars": 4000,
+    "notify_group_upload": false,
+    "allowed_dirs": []
+  },
+  "local_api": {
+    "enable": true,
+    "token": "a35bb84eb1293ee799ff4911486c0a253241fd5e28022fd5",
+    "max_body_mb": 200,
+    "max_attachments": 9,
+    "max_per_minute": 30
+  },
+  "dsh": {
+    "enable": true,
+    "cli": "",
+    "profile": "headless",
+    "timeout_seconds": 180,
+    "max_output_chars": 6000,
+    "lock_dir": "C:\\Users\\Public\\RemDsh",
+    "admin_command": "dhs-work"
+  },
+  "bili": {
+    "cookies": "",
+    "quality": 64,
+    "max_videos": 2,
+    "max_duration": 600,
+    "timeout_seconds": 240
+  },
+  "watchdog": {
+    "enable": true,
+    "interval_seconds": 30,
+    "offline_threshold": 3,
+    "rem_fail_threshold": 2,
+    "qq_restart_cooldown": 300,
+    "rem_restart_cooldown": 120,
+    "max_qq_restarts_per_hour": 3,
+    "rem_start_bat": "start-rem-bot.bat",
+    "qq_start_bat": "start-qq-bot.bat",
+    "internet_host": "api.deepseek.com",
+    "internet_port": 443
+  },
+  "cloud": {
+    "enable": false,
+    "root": "云算力",
+    "ssh_exec": "ssh_exec.ps1",
+    "power_script": "autodl_power.py",
+    "instance": "",
+    "timeout_seconds": 120,
+    "max_output_chars": 8000,
+    "max_download_mb": 50,
+    "guard": {
+      "enable": true,
+      "interval_seconds": 300,
+      "initial_delay_seconds": 300,
+      "question": "服务器在运行吗？有人在用算力服务器吗？没有的话关掉服务器。"
+    }
+  },
+  "local_llm": {
+    "enable": true,
+    "mode": "online",
+    "engine_url": "http://127.0.0.1:11500",
+    "timeout_seconds": 320
+  },
+  "local_sandbox": {
+    "enable": true,
+    "root": "local_workspace",
+    "tools": [
+      "read_file",
+      "list_files",
+      "write_script",
+      "run_script",
+      "generate_image",
+      "recognize_image"
+    ],
+    "read_outside": false,
+    "max_rounds": 3,
+    "send_allow_dirs": [
+      "qq-bot-output"
+    ]
+  },
+  "vision": {
+    "provider": "ollama",
+    "base": "http://127.0.0.1:11434",
+    "model": "qwen2.5vl:7b",
+    "timeout_seconds": 180,
+    "num_predict": 700,
+    "keep_alive": "30m"
+  }
+}

@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-for-blender = blender_mcp.server:main

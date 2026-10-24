@@ -1,0 +1,27 @@
+{
+  "anima_baseV10.safetensors": {
+    "clip": "qwen_3_06b_base.safetensors",
+    "clip_type": "qwen_image",
+    "vae": "qwen_image_vae.safetensors"
+  },
+  "z_image_turbo_bf16.safetensors": {
+    "clip": "qwen_3_4b_fp8_mixed.safetensors",
+    "clip_type": "lumina2",
+    "vae": "ae.safetensors"
+  },
+  "ernie-image-turbo.safetensors": {
+    "clip": "ministral-3-3b.safetensors",
+    "clip_type": "hunyuan_image",
+    "vae": "flux2-vae.safetensors"
+  },
+  "z_image_turbo_int8_convrot.safetensors": {
+    "clip": "qwen_3_4b_fp8_mixed.safetensors",
+    "clip_type": "lumina2",
+    "vae": "ae.safetensors"
+  },
+  "anima-base-v1.0.safetensors": {
+    "clip": "qwen_3_06b_base.safetensors",
+    "clip_type": "qwen_image",
+    "vae": "qwen_image_vae.safetensors"
+  }
+}
